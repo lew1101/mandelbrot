@@ -36,7 +36,7 @@ int main(int argc, char *argv[]) {
       std::cerr << "x_min must be less than x_max" << std::endl;
       return 1;
     } else if (CI_MIN >= CI_MAX) {
-      std::cerr << "x_min must be less than x_max" << std::endl;
+      std::cerr << "y_min must be less than y_max" << std::endl;
       return 1;
     }
 
