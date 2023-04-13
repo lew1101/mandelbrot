@@ -1,5 +1,7 @@
 # Mandelbrot
 
+Author: Kenneth Lew
+
 ## Usage
 
 Run one of the following commands:
