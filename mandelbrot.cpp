@@ -56,22 +56,23 @@ int main(int argc, char *argv[]) {
     long double ci = CI_MIN;
     for (int y = 0; y < HEIGHT; ++y, ci += CI_STEP) {
 
-      int i = 0;
+      int iterations = 0;
       long double temp_zr;
       long double zr = 0, zi = 0;
 
       // https://en.wikipedia.org/wiki/Plotting_algorithms_for_the_Mandelbrot_set#Continuous_(smooth)_coloring
-      while ((zr * zr + zi * zi) < BOUNDS && i++ < ITER_MAX) {
+      while ((zr * zr + zi * zi) < BOUNDS && iterations++ < ITER_MAX) {
+        // z_n = z_{n-1}^2 + c 
         temp_zr = zr * zr - zi * zi + cr;
         zi = 2 * zr * zi + ci;
         zr = temp_zr;
       }
 
-      if (i < ITER_MAX) {
+      if (iterations < ITER_MAX) {
         // https://www.paridebroggi.com/blogpost/2015/05/06/fractal-continuous-coloring/
-        const long double z = std::log(zr * zr + zi * zi) / 2;
+        const long double zeta = std::log(zr * zr + zi * zi) / 2;
         const long double continuous_index =
-            i + 1 - std::log(z / LOG_2) / LOG_2;
+            iterations + 1 - std::log(zeta / LOG_2) / LOG_2;
 
         // https://krazydad.com/tutorials/makecolors.php
         // channel = sin(frequency * continuous_index + phase) * center + delta)
