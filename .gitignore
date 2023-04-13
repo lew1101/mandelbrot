@@ -1,0 +1,16 @@
+.cache/
+build/
+
+.DS_Store
+Makefile
+compile_commands.json
+
+CMakeCache.txt
+.history/
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
