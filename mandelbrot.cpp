@@ -69,7 +69,7 @@ int main(int argc, char *argv[]) {
 
       if (i < ITER_MAX) {
         // https://www.paridebroggi.com/blogpost/2015/05/06/fractal-continuous-coloring/
-        const long double z = std::sqrt(zr * zr + zi * zi);
+        const long double z = std::log(zr * zr + zi * zi) / 2;
         const long double continuous_index =
             i + 1 - std::log(z / LOG_2) / LOG_2;
 
