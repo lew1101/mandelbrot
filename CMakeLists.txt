@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(
     "Preliminary Programming Problems"
-    VERSION 0.1.0
+    VERSION 0.2.0
     LANGUAGES CXX)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
