@@ -1,6 +1,6 @@
 # Mandelbrot
 
-Author: Kenneth Lew
+**Author:** [Kenneth Lew](https://github.com/lew1101)
 
 ## Usage
 
