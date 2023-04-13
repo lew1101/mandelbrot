@@ -6,21 +6,6 @@
 ![mandelbrot_set](./samples/mandelbrot_set.bmp)
 ![mandelbrot_two](./samples/mandelbrot_two.bmp)
 
-## Usage
-
-Run one of the following commands:
-
-### Default Image
-
-```shell
-mandelbrot 
-```
-
-### Custom Image
-
-```shell
-mandelbrot [x_min] [x_max] [y_min] [y_max]
-```
 
 ## Clone Repo
 
@@ -36,4 +21,20 @@ Make sure you have a C++ compiler and `CMake>=3.0.0` on your machine, then run t
 
 ```shell
 cmake . && cmake --build .
+```
+
+## Usage
+
+Run one of the following commands:
+
+### Default Image
+
+```shell
+mandelbrot 
+```
+
+### Custom Image
+
+```shell
+mandelbrot [x_min] [x_max] [y_min] [y_max]
 ```
