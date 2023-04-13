@@ -2,8 +2,8 @@
 
 **Author:** [Kenneth Lew](https://github.com/lew1101)
 
-![mandelbrot_set](./samples/mandelbrot_set.bmp)
 ![mandelbrot_one](./samples/mandelbrot_one.bmp)
+![mandelbrot_set](./samples/mandelbrot_set.bmp)
 ![mandelbrot_two](./samples/mandelbrot_two.bmp)
 
 ## Usage
