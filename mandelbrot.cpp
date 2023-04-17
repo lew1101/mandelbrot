@@ -89,9 +89,10 @@ int main(int argc, char *argv[]) {
         // https://krazydad.com/tutorials/makecolors.php
         // channel = sin(frequency * continuous_index + phase) * center + delta)
         const rgb_t px_color{
-            (unsigned char)(sin(0.17 * continuous_index + 0) * 115 + 140),
-            (unsigned char)(sin(0.15 * continuous_index + 2) * 115 + 140),
-            (unsigned char)(sin(0.2 * continuous_index + 4) * 115 + 140)};
+            (unsigned char)(sin(0.17 * continuous_index + 0) * 115 + 140), // r
+            (unsigned char)(sin(0.15 * continuous_index + 2) * 115 + 140), // g
+            (unsigned char)(sin(0.2 * continuous_index + 4) * 115 + 140)   // b
+        };
 
         image.set_pixel(x, y, px_color);
       }
