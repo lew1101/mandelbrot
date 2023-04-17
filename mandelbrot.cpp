@@ -1,8 +1,6 @@
-#include <array>
 #include <cmath>
 #include <iostream>
 #include <stdexcept>
-#include <string>
 
 #include <bitmap/bitmap_image.hpp>
 
